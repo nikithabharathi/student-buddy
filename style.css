@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 350px;
+  height: 500px;
+  font-family: "Poppins", sans-serif;
+}
+
+#buddy-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  border-radius: 20px;
+  overflow: hidden;
+  color: white;
+}
+
+/* Header */
+#buddy-header {
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+  cursor: grab;
+  background: rgba(0,0,0,0.5);
+}
+
+/* Chat box */
+#buddy-chat {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Input */
+#buddy-input {
+  display: flex;
+  padding: 10px;
+  background: rgba(0,0,0,0.3);
+}
+
+#buddy-input input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+}
+
+#buddy-input button {
+  margin-left: 5px;
+  background: #ff4757;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+#buddy-input button:hover {
+  background: #e84118;
+}
+
+/* Messages */
+.msg-row {
+  display: flex;
+  align-items: flex-end;
+}
+
+.msg-row.user {
+  justify-content: flex-end;
+}
+
+.avatar {
+  font-size: 20px;
+  margin: 0 5px;
+}
+
+.user-message {
+  background: #6a5acd;
+  padding: 8px 12px;
+  border-radius: 20px 20px 0 20px;
+  max-width: 70%;
+  word-wrap: break-word;
+}
+
+.bot-message {
+  background: #2ecc71;
+  padding: 8px 12px;
+  border-radius: 20px 20px 20px 0;
+  max-width: 70%;
+  word-wrap: break-word;
+}
